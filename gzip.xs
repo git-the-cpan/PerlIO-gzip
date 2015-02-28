@@ -867,7 +867,7 @@ PerlIOGzip_popped(pTHX_ PerlIO *f)
   if (g->flags & LAYERGZIP_FLAG_DEFL_INIT_DONE) {
     g->flags &= ~LAYERGZIP_FLAG_DEFL_INIT_DONE;
     code = deflateEnd (&(g->zs));
-    PerlIO_debug("PerlIOGzip_popped code=%d\n", code);
+    PerlIO_debug("PerlIOGzip_popped code=%"IVdf"\n", code);
     code = (code == Z_OK) ? 0 : -1;
   }
 

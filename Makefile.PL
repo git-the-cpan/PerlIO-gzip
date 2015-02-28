@@ -4,7 +4,8 @@ use 5.008; # Stop perl 5.005 or earler barfing on the v string
 use ExtUtils::MakeMaker;
 use Config;
 
-unless ($Config{useperlio} eq 'define' and $Config{usesfio} eq 'false') {
+unless ($Config{useperlio} eq 'define' and
+	(defined($Config{usesfio}) ? $Config{usesfio} : 'false') eq 'false') {
   die <<BARF;
 You need perl 5.8.0 or later, configured to use perlio (and not to use sfio)
 BARF

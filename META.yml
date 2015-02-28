@@ -1,12 +1,21 @@
---- #YAML:1.0
-name:                PerlIO-gzip
-version:             0.18
-abstract:            Perl extension to provide a PerlIO layer to gzip/gunzip
-license:             perl
-generated_by:        ExtUtils::MakeMaker version 6.30_02
-author:              Nicholas Clark <nwc10+perlio-gzip@colon.colondot.net>
-distribution_type:   module
-requires:     
+---
+abstract: 'Perl extension to provide a PerlIO layer to gzip/gunzip'
+author:
+  - 'Nicholas Clark <nwc10+perlio-gzip@colon.colondot.net>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.143240'
+license: perl
 meta-spec:
-    url: <http://module-build.sourceforge.net/META-spec-new.html>;
-    version: 1.1
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: PerlIO-gzip
+no_index:
+  directory:
+    - t
+    - inc
+requires: {}
+version: '0.19'

@@ -1,4 +1,4 @@
-PerlIO::gzip version 0.18
+PerlIO::gzip version 0.19
 =========================
 
 A layer for the PerlIO system to transparently gzip/gunzip files.

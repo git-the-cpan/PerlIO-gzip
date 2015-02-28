@@ -118,3 +118,9 @@ Revision history for Perl extension PerlIO::Gzip.
       TODO 2 tests in read.t which fail. I'm infering that this is because
       :stdio opens in text mode, and there's no way to tell it to open in
       binary mode. Time to consult p5p.
+
+0.19  Sat Feb 28 11:31:29 CET 2015
+      Two patches from zefram [at] fysh.org
+      (#92412) - usesfio config removal breaks
+      And whose fault was this anyway? (See core commit 0b39d4dc4ab83828)
+      (#92031) - printf format mismatch
